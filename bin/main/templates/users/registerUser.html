@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<title>New User</title>
+</head>
+
+<body>
+
+	<div class="container">
+	
+		<h3>Register user</h3>
+		<hr>
+		
+		<form th:action="@{/users/register}" method="POST">
+			
+			<input type="text" name="firstName"
+					class="form-control mb-4 col-4" placeholder="First name">
+
+			<input type="text" name="lastName"
+					class="form-control mb-4 col-4" placeholder="Last name">
+					
+			<input type="text" name="userName"
+					class="form-control mb-4 col-4" placeholder="Username">	
+					
+			<input type="password" name="password"
+					class="form-control mb-4 col-4" placeholder="Password">				
+
+			<input type="text" name="email"
+					class="form-control mb-4 col-4" placeholder="Email">
+					
+					
+			
+			<input type="radio" name="gender" value="FEMALE"> Female  	
+			<input type="radio" name="gender" value="MALE"> Male<br>
+			
+			<button type="submit" class="btn btn-info col-2">Register</button>
+						
+		</form>
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

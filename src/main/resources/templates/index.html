@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+	<title>Home Page</title>
+	<!-- reference CSS file --> 
+	<link rel="stylesheet"
+		th:href="@{/css/demo.css}" />
+</head>
+   <body>
+   
+       
+      <h1>Home Page!</h1>
+      <div class="container">
+<a th:href="@{/users/login}"
+		class="btn btn-primary btn-sm mb-3">
+		<input type="submit" value="Log in"/>
+	</a>
+		<hr>
+		
+		<!-- Add a button -->
+	<a th:href="@{/users/register}"
+		class="btn btn-primary btn-sm mb-3">
+		<input type="submit" value="Register"/>
+	</a>
+
+		<table class="table table-bordered table-striped">
+			<thead class="thead-dark">
+			
+			</thead>
+       </table>
+       
+       </div>
+   </body>
+</html>
